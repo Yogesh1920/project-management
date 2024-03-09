@@ -12,6 +12,7 @@ To access swagger url - http://localhost:8080/swagger-ui/index.html#/
 Below are the API's 
 
 01. To add project
+  
    curl -X 'POST' \
   'http://localhost:8080/projects/create' \
   -H 'accept: */*' \
@@ -23,16 +24,19 @@ Below are the API's
   "endDate": "14/06/2024"
 
 02. To get list of projects
+  
   curl -X 'GET' \
   'http://localhost:8080/projects/readAllProjects' \
   -H 'accept: */*'
 
 03. Get project details by id
+  
    curl -X 'GET' \
   'http://localhost:8080/projects/read/1' \
   -H 'accept: */*'
 
 04. To update existing project by id
+  
    curl -X 'PUT' \
   'http://localhost:8080/projects/update/1' \
   -H 'accept: */*' \
@@ -45,6 +49,7 @@ Below are the API's
   }'   
 
 05. To delete project by id
+  
    curl -X 'DELETE' \
   'http://localhost:8080/projects/delete/1' \
   -H 'accept: */*'
