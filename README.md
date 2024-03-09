@@ -13,43 +13,43 @@ Below are the API's
 
 01. To add project
   
-   curl -X 'POST' \
-  'http://localhost:8080/projects/create' \
-  -H 'accept: */*' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "name": "Quiz Application",
-  "description": "Quiz App using SpringBoot",
-  "startDate": "12/03/2023",
-  "endDate": "14/06/2024"
+         curl -X 'POST' \
+        'http://localhost:8080/projects/create' \
+        -H 'accept: */*' \
+        -H 'Content-Type: application/json' \
+        -d '{
+        "name": "Quiz Application",
+        "description": "Quiz App using SpringBoot",
+        "startDate": "12/03/2023",
+        "endDate": "14/06/2024"
 
 02. To get list of projects
   
-  curl -X 'GET' \
-  'http://localhost:8080/projects/readAllProjects' \
-  -H 'accept: */*'
+        curl -X 'GET' \
+        'http://localhost:8080/projects/readAllProjects' \
+        -H 'accept: */*'
 
 03. Get project details by id
   
-   curl -X 'GET' \
-  'http://localhost:8080/projects/read/1' \
-  -H 'accept: */*'
+         curl -X 'GET' \
+        'http://localhost:8080/projects/read/1' \
+        -H 'accept: */*'
 
 04. To update existing project by id
   
-   curl -X 'PUT' \
-  'http://localhost:8080/projects/update/1' \
-  -H 'accept: */*' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "name": "Quiz Application",
-  "description": "Quiz App using SpringBoot",
-  "startDate": "12/03/2023",
-  "endDate": "14/07/2024"
-  }'   
+         curl -X 'PUT' \
+        'http://localhost:8080/projects/update/1' \
+        -H 'accept: */*' \
+        -H 'Content-Type: application/json' \
+        -d '{
+        "name": "Quiz Application",
+        "description": "Quiz App using SpringBoot",
+        "startDate": "12/03/2023",
+        "endDate": "14/07/2024"
+        }'   
 
 05. To delete project by id
   
-   curl -X 'DELETE' \
-  'http://localhost:8080/projects/delete/1' \
-  -H 'accept: */*'
+         curl -X 'DELETE' \
+        'http://localhost:8080/projects/delete/1' \
+        -H 'accept: */*'
