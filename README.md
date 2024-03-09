@@ -4,8 +4,8 @@ Pull the project from master branch to your local system.
 you can use Intaliji IDE, VS code etc
 
 To access the h2 in memory database use this url - http://localhost:8080/h2-console
-username : admin
-password : admin
+        username : admin
+        password : admin
 
 To access swagger url - http://localhost:8080/swagger-ui/index.html#/
 
